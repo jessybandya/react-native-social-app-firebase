@@ -1,0 +1,55 @@
+node_modules/
+.expo/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# macOS
+.DS_Store
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <ScrollView>
+
+        
+        <View key={postId} onPress={() => viewPost(postId,ownerId,ownerUsename,ownerprofilePhotoUrl,postCaption,postImage,timestamp)} key={postId}
+                            style={styles.containerImage}>
+       <View style={styles.feedItem}>
+                <Image source={{uri: ownerprofilePhotoUrl}} style={styles.avatar} />
+                <View style={{ flex: 1 }}>
+                    <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+                        <View>
+                            <Text style={styles.name}>{ownerUsename}</Text>
+                            <Text style={styles.timestamp}>{moment({timestamp}).fromNow()}</Text>
+                        </View>
+
+                        {/* <Ionicons name="more" size={24} color="#73788B" /> */}
+                        <MaterialIcons name="more-horiz" size={24} color="#73788B" />
+                    </View>
+                    <Text style={styles.post}>{postCaption}</Text>
+                    <Image source={{uri: postImage}} style={styles.postImage} resizeMode="cover" />
+                    <View style={{ flexDirection: "row" }}>
+                        <Ionicons name="heart-outline" size={24} color="#73788B"  />
+                        <Text style={{ marginRight: 16 }}>45</Text>
+                        <Ionicons name="ios-chatbox" size={24} color="#73788B" />
+                        <Text>45</Text>
+                    </View>
+                </View>
+            </View>
+                        </View>
+      </ScrollView>            
