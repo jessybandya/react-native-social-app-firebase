@@ -115,8 +115,8 @@ const styles = StyleSheet.create({
     container:{
         // flex:1,
         backgroundColor: "#ebecf3",
-        paddingTop:30,
-        marginBottom:10
+        paddingTop:40,
+        marginBottom:50
     },
     feedContainer:{
         borderBottomColor: "pink",
